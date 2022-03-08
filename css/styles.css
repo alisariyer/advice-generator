@@ -1,0 +1,132 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+/*! main styles */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, p {
+  margin: 0;
+}
+
+body {
+  font-family: Manrope, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+  background-color: #1f2632;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 28rem;
+  padding: 2.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #323a49;
+  text-align: center;
+}
+
+main h1 {
+  font-size: 0.8125rem;
+  color: #52ffa8;
+  letter-spacing: .4rem;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+main p {
+  color: #cee3e9;
+  line-height: 2rem;
+  letter-spacing: .05rem;
+}
+
+main #divider-img {
+  width: 100%;
+}
+
+main .dice-container {
+  position: absolute;
+  bottom: 0;
+  width: 3rem;
+  aspect-ratio: 1;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  background-color: #52ffa8;
+  border-radius: 50%;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .dice-container img {
+  width: 1.2rem;
+}
+
+main > *:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  height: 1rem;
+  text-align: center;
+  font-size: 0.65rem;
+  color: #cee3e9;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:link, footer a:visited {
+  color: #52ffa8;
+}
+
+footer a:hover, footer a:active {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=styles.css.map */

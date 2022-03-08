@@ -1,0 +1,11 @@
+@mixin display-flex($direction: row, $justify: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: center;
+}
+
+@mixin border-radius($radius: .5rem) {
+    border: none;
+    border-radius: $radius;
+}
