@@ -45,6 +45,7 @@ Users should be able to:
 - Sass compose mixins
 - Flexbox
 - Mobile-first workflow
+- JavaScript Fetch
 
 ### What I learned
 
