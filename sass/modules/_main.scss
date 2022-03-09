@@ -22,7 +22,7 @@ body {
 main {
     position: relative;
     @include display-flex(column, flex-start);
-    width: 28rem;
+    width: 90%;
     padding: map-get($spaces, 4);
     @include border-radius();
     background-color: map-get($colors, "dark-grayish-blue");
@@ -32,18 +32,17 @@ main {
         font-size: $default-font-size / 1.6;
         color: map-get($colors, "neon-green");
         letter-spacing: .4rem;
-        transform: translateY(100%);
-    }
+    } // end main h1
 
     p {
         color: map-get($colors, "light-cyan");
         line-height: map-get($spaces, 3);
         letter-spacing: .05rem;
-    }
+    } // end main p
 
     #divider-img {
         width: 100%;
-    }
+    } // end main #divider-img
 
     .dice-container {
         position: absolute;
@@ -58,13 +57,18 @@ main {
 
         img {
             width: 1.2rem;
-        }
+        } // end main .dice-container img
+
+        &:hover, &:active {
+            box-shadow: 0 0 20px 5px map-get($colors, "neon-green");
+        } // end main .dice-container:hover
     }
 
     > *:not(:last-child) {
-        margin-bottom: map-get($spaces, 3);
-    }
-}
+        margin-bottom: map-get($spaces, 2);
+    } // end main>*:not(:last-child)
+
+} // end main
 
 footer {
     position: absolute;
@@ -83,5 +87,11 @@ footer {
         &:hover, &:active {
             text-decoration: underline;
         }
+    } // end footer a
+} // end footer
+
+@media screen and (min-width: 576px) {
+    main {
+        width: 26rem;
     }
 }

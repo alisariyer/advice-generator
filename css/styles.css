@@ -49,7 +49,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 28rem;
+  width: 90%;
   padding: 2.5rem;
   border: none;
   border-radius: 0.5rem;
@@ -61,8 +61,6 @@ main h1 {
   font-size: 0.8125rem;
   color: #52ffa8;
   letter-spacing: .4rem;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
 }
 
 main p {
@@ -104,8 +102,13 @@ main .dice-container img {
   width: 1.2rem;
 }
 
+main .dice-container:hover, main .dice-container:active {
+  -webkit-box-shadow: 0 0 20px 5px #52ffa8;
+          box-shadow: 0 0 20px 5px #52ffa8;
+}
+
 main > *:not(:last-child) {
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
 }
 
 footer {
@@ -128,5 +131,11 @@ footer a:link, footer a:visited {
 
 footer a:hover, footer a:active {
   text-decoration: underline;
+}
+
+@media screen and (min-width: 576px) {
+  main {
+    width: 26rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
